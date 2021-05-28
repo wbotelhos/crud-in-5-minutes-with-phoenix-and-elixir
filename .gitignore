@@ -1,0 +1,8 @@
+.DS_Store
+.env
+*.log
+*.secret.exs
+/_build
+/assets/node_modules
+/deps
+/priv/static
