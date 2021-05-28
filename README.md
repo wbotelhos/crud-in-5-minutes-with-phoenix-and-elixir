@@ -1,20 +1,30 @@
-# Bible
+# CRUD in 5 Minutes with Phoenix and Elixir
 
-To start your Phoenix server:
+A basic guide teaching how install Erlang, Elixir and Phoenix where you'll be able to run your first CRUD.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
+Read the article at [CRUD in 5 Minutes with Phoenix and Elixir](https://www.wbotelhos.com/crud-in-5-minutes-with-phoenix-and-elixir).
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+# Setup
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+```sh
+# clone the project
+git clone git@github.com:wbotelhos/crud-in-5-minutes-with-phoenix-and-elixir.git
 
-## Learn more
+# access the project
+cd crud-in-5-minutes-with-phoenix-and-elixir
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+# installs the dependencies
+mix deps.get
+
+# creates the database
+mix ecto.setup
+
+# installs assets
+cd assets && yarn install && cd -
+
+# run the server
+mix phx.server
+
+# open the browser
+open localhost:4000/persons
+```
